@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Behind word</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Meaning behind word</h1>
+        <form id="word-form">
+            <input type="text" id="word-input" name="word-input" placeholder="Enter a word">
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+        <p id="definition"></p>
+    </div>
+</body>
+</html>
